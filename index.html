@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="nl">
+<link rel="stylesheet" href="style.css">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Klantzijde Groen & Gewoon Doen</title>
+</head>
+
+<body>
+
+    <header>
+        <h2>Groen &amp; Gewoon Doen</h2>
+        <nav>
+            <a href="#">Menu</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h1>Welkom!</h1>
+            <p>Bestel uw tuinservice eenvoudig online!</p>
+        </section>
+
+        <hr>
+
+        
+        <section>
+            <h3>Standaard Pakketten</h3>
+            <form>
+                <label for="pakket">Kies een pakket:</label>
+                <select id="pakket" name="pakket">
+                    <option value="">-- Kies een pakket --</option>
+                    <option value="onderhoud">Tuin onderhoud</option>
+                    <option value="snoeien">Snoeien</option>
+                    <option value="aanleg">Tuinaanleg</option>
+                </select>
+                <button type="submit">Bestel</button>
+            </form>
+        </section>
+
+        <hr>
+
+        
+        <section>
+            <h3>Custom Offerte</h3>
+            <form>
+                <label>
+                    m² Gras:
+                    <input type="number" name="gras">
+                </label>
+                <br><br>
+
+                <label>
+                    m² Tegels:
+                    <input type="number" name="tegels">
+                </label>
+                <br><br>
+
+                <label>
+                    Meters Heg:
+                    <input type="number" name="heg">
+                </label>
+                <br><br>
+
+                <label>
+                    <input type="checkbox" name="afval">
+                    Afval afvoeren
+                </label>
+                <br>
+
+                <label>
+                    <input type="checkbox" name="spoed">
+                    Spoedservice
+                </label>
+                <br><br>
+
+                <button type="submit">Bereken offerte</button>
+            </form>
+        </section>
+
+        <hr>
+
+        
+        <section>
+            <h3>Mijn Orders</h3>
+            <button>Nieuwe bestelling</button>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Pakket / Info</th>
+                        <th>Offerte</th>
+                        <th>Status</th>
+                        <th>Datum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Tuin onderhoud</td>
+                        <td>€150</td>
+                        <td>In behandeling</td>
+                        <td>12-03-2026</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Custom offerte</td>
+                        <td>€320</td>
+                        <td>Goedgekeurd</td>
+                        <td>20-03-2026</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>
+            <a href="#">Contact</a> |
+            <a href="#">Social Media</a> |
+            <a href="#">Disclaimer</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
