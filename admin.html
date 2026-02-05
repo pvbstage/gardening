@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<script src="js/functions.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/admin.js"></script>
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Beheerszijde (Admin)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h2>Admin – Groen &amp; Gewoon Doen</h2>
+
+    <button id="menu-toggle">☰</button>
+
+    <nav id="main-nav">
+        <a href="index.php">Home</a>
+        <a href="admin.html">Admin</a>
+        <a href="#">Logout</a>
+    </nav>
+</header>
+
+
+<main>
+
+    <section>
+        <h1>Beheerszijde (Admin)</h1>
+    </section>
+
+    <!-- Orders -->
+    <section>
+        <h3>Orders Overzicht</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Klant</th>
+                    <th>Details</th>
+                    <th>Offerte</th>
+                    <th>Status</th>
+                    <th>Acties</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>001</td>
+                    <td>Jan Jansen</td>
+                    <td>Tuin renovatie</td>
+                    <td>€1200</td>
+                    <td>Open</td>
+                    <td>
+                        <button>Inplannen</button>
+                        <button>Afwijzen</button>
+                        <button>Afgerond</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Piet de Boer</td>
+                    <td>Gras leggen</td>
+                    <td>€850</td>
+                    <td>Bezig</td>
+                    <td>
+                        <button>Inplannen</button>
+                        <button>Afwijzen</button>
+                        <button>Afgerond</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <!-- Pakketten -->
+    <section>
+        <h3>Pakketten Beheren</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Naam</th>
+                    <th>Prijs</th>
+                    <th>Bewerk</th>
+                    <th>Verwijder</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Basis Tuin</td>
+                    <td>€500</td>
+                    <td><button>Bewerk</button></td>
+                    <td><button>Verwijder</button></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <form>
+            <h4>Nieuw Pakket</h4>
+
+            <label>
+                Naam
+                <input type="text">
+            </label>
+
+            <label>
+                Beschrijving
+                <input type="text">
+            </label>
+
+            <label>
+                Prijs
+                <input type="number">
+            </label>
+
+            <button>Toevoegen</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <!-- Tarieven -->
+    <section>
+        <h3>Tarieven Beheren (optioneel)</h3>
+
+        <form>
+            <label>
+                Prijs per m² gras
+                <input type="number">
+            </label>
+
+            <label>
+                Prijs per m² tegels
+                <input type="number">
+            </label>
+
+            <button>Opslaan</button>
+        </form>
+    </section>
+
+</main>
+
+<footer>
+    © Groen &amp; Gewoon Doen – Admin Paneel
+</footer>
+
+</body>
+</html>
